@@ -40,7 +40,9 @@ src/main.rs: アプリケーションのメインロジック
 Cargo.toml: 依存ライブラリの設定  
 NotoSansJP-Regular.ttf: 内蔵日本語フォント  
 
-### 使用アセット・ライブラリ  
+### 使用アセット・ライブラリなど  
+言語: Rust
+IDE: RustRover
 GUI: egui  
 Font: Noto Sans Japanese (SIL Open Font License 1.1)  
 
