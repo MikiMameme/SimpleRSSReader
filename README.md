@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Made with Gemini](https://img.shields.io/badge/Made%20with-Gemini-blue?logo=google-gemini&logoColor=white)](https://gemini.google.com/)
 [![Author](https://img.shields.io/badge/Author-Miki%20Mame-lightgrey)](https://github.com/MikiMameme)  
+![スクリーンショット](https://github.com/MikiMameme/SimpleRSSReader/blob/main/Screenshot.png)  
   
 Rust と GUIライブラリ `egui` を使用して作成した、シンプルで軽量なデスクトップ RSS リーダーです。  
 プログラミング学習の一環として開発した成果物です。
