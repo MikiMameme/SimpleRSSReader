@@ -1,4 +1,4 @@
-# RSS Reader (Prototype Ver2)
+# RSS Reader  
 
 Rust と GUIライブラリ `egui` を使用して作成した、シンプルで軽量なデスクトップ RSS リーダーです。
 プログラミング学習の一環として開発した成果物です。
@@ -33,7 +33,7 @@ NotoSansJP-Regular.ttf: 内蔵日本語フォント
 GUI: egui  
 Font: Noto Sans Japanese (SIL Open Font License 1.1)  
 
-### 協力:
+### 協力
 本プログラムの作成にあたっては、生成AI（Gemini, Claude等）の協力を得て制作されました。  
 
 ### 免責事項
