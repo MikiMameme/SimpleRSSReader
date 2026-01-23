@@ -43,19 +43,6 @@ Rust と GUIライブラリ `egui` を使用して作成した、シンプルで
   "https://exampletech-news.net/entry/rust-update"  
 ]  
     
-### ビルド方法（開発者向け）
-ソースコードからビルドする場合は、以下の準備が必要です。  
-1. Rust (Cargo) のインストール  
-2. プロジェクトルートに `NotoSansJP-Regular.ttf` を配置  
-3. 以下のコマンドを実行  
-   ```bash  
-   cargo run --release  
-  
-### プロジェクト構成  
-src/main.rs: アプリケーションのメインロジック  
-Cargo.toml: 依存ライブラリの設定  
-NotoSansJP-Regular.ttf: 内蔵日本語フォント  
-
 ### 使用アセット・ライブラリなど  
 言語: Rust  
 IDE: RustRover  
