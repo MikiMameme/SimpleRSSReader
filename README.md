@@ -56,15 +56,15 @@ VOICEVOXのAPIを利用し、ニュース記事をキャラクターボイスで
 
 ### settings.jsonの構造(VOICEVOX連携管理システム)  
   ※話者をずんだもんに設定し、VOICEVOXのパスを指定した際の例
- {
-  "speaker_name": "ずんだもん",
-  "style_id": 3,
-  "speed": 1.0,
-  "timer_enabled": false,
-  "timer_interval_min": 30,
-  "right_panel_width": 400.0,
-  "voicevox_path": "C:\\Users\\user\\AppData\\Local\\Programs\\VOICEVOX\\VOICEVOX.exe" 
-}
+ {  
+  "speaker_name": "ずんだもん",  
+  "style_id": 3,  
+  "speed": 1.0,  
+  "timer_enabled": false,  
+  "timer_interval_min": 30,  
+  "right_panel_width": 400.0,  
+  "voicevox_path": "C:\\Users\\user\\AppData\\Local\\Programs\\VOICEVOX\\VOICEVOX.exe"   
+}  
   
 ## 💻 動作環境  
   
