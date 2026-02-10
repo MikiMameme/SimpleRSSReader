@@ -55,7 +55,7 @@ VOICEVOXのAPIを利用し、ニュース記事をキャラクターボイスで
 ]  
 
 ### settings.jsonの構造(VOICEVOX連携管理システム)  
-  ※話者をずんだもんに設定し、VOICEVOXのパスを指定した際の例
+  ※話者をずんだもんに設定し、VOICEVOXのパスを指定した際の例  
  {  
   "speaker_name": "ずんだもん",  
   "style_id": 3,  
