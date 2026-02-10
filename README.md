@@ -7,7 +7,18 @@
 ![スクリーンショット](https://github.com/MikiMameme/SimpleRSSReader/blob/main/Screenshot.png)  
   
 Rust と GUIライブラリ `egui` を使用して作成した、シンプルで軽量なデスクトップ RSS リーダーです。  
-プログラミング学習の一環として開発した成果物です。
+プログラミング学習の一環として開発した成果物です。  
+バージョン2.0より、**VOICEVOX** と連携した記事読み上げ機能が搭載されました。  
+
+### 🔊 音声読み上げ機能 (New in v2.0)
+VOICEVOXのAPIを利用し、ニュース記事をキャラクターボイスで読み上げます。
+
+* **再生コントロール**: 選択記事の読み上げ、フィルタリングされた記事の一括連続再生。
+* **VOICEVOXランチャー**:
+    * アプリ内からVOICEVOXの実行ファイルパス(`.exe`)を指定・記憶。
+    * VOICEVOXが未起動の場合、アプリ内のボタンから直接起動可能。
+* **カスタマイズ**: 話者（キャラクター）、スタイル（感情）、読み上げ速度の変更。
+* **自動巡回**: 設定した間隔でバックグラウンド更新を行い、新着記事があれば音声でアナウンス。  
 
 ## 主な機能
 - **フィード管理**: RSS フィードの追加、および削除が可能です。
@@ -21,9 +32,9 @@ Rust と GUIライブラリ `egui` を使用して作成した、シンプルで
 
 ## 使い方
 ### 起動方法
-1. 配布されている`RSS_Reader_v1.2.zip`をダウンロードし、展開してください。
-2. 展開した`RSS_Reader_v1.2`フォルダ内にある `RSS_Reader_v1.2.exe` を実行してください。
-3. 初回起動時はフィードが登録されていません。画面の指示に従い、お好みのRSSフィードURLを登録してください。
+1. 配布されている`RSS_Reader_v2.0.zip`をダウンロードし、展開してください。
+2. 展開した`RSS_Reader_v2.0`フォルダ内にある `RSS_Reader_v2.0.exe` を実行してください。
+3. 初回起動時はフィードが登録されていません。左側のフィードの「＋追加」よりお好みのRSSフィードを登録してください。
 4. 二回目以降は、同フォルダ内に作成される `feeds.json` から自動的にフィード情報を読み込みます。
 
 ### feeds.jsonの構造(フィード管理システム)
@@ -42,7 +53,29 @@ Rust と GUIライブラリ `egui` を使用して作成した、シンプルで
   "https://exampleblog.jp/posts/12345",  
   "https://exampletech-news.net/entry/rust-update"  
 ]  
-    
+
+### settings.jsonの構造(VOICEVOX連携管理システム)  
+  ※話者をずんだもんに設定し、VOICEVOXのパスを指定した際の例
+ {
+  "speaker_name": "ずんだもん",
+  "style_id": 3,
+  "speed": 1.0,
+  "timer_enabled": false,
+  "timer_interval_min": 30,
+  "right_panel_width": 400.0,
+  "voicevox_path": "C:\\Users\\user\\AppData\\Local\\Programs\\VOICEVOX\\VOICEVOX.exe" 
+}
+  
+## 💻 動作環境  
+  
+### RSSリーダーとして使う場合  
+* Windows 10 / 11 が正常に動作し、インターネット接続されたパソコン。  
+  
+### VOICEVOX読み上げ機能を使う場合  
+* **VOICEVOXが快適に動作するスペック**  
+    * 例：4コア以上のCPUや、GPUが搭載されているPCなど。  
+* 別途 [VOICEVOX](https://voicevox.hiroshiba.jp/) のインストールが必要です。  
+      
 ## 使用アセット・ライブラリなど  
 言語: Rust  
 IDE: RustRover  
