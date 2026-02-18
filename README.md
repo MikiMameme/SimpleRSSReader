@@ -73,8 +73,11 @@ VOICEVOXのAPIを利用し、ニュース記事をキャラクターボイスで
   
 ### VOICEVOX読み上げ機能を使う場合  
 * **VOICEVOXが快適に動作するスペック**  
-    * 例：4コア以上のCPUや、GPUが搭載されているPCなど。  
-* 別途 [VOICEVOX](https://voicevox.hiroshiba.jp/) のインストールが必要です。  
+    * NVIDIAやAMDなどの「独立GPU」が搭載されているPCを強く推奨します。CPU生成、CPU内蔵GPUでも動作しますが読み上げに時間がかかりうまく読み上げできないことがあります。  
+* 別途 [VOICEVOX](https://voicevox.hiroshiba.jp/) のインストールが必要です。
+### MSVCR110.dll がないため、プログラムを開始できません。プログラムを再インストールすると、この問題が解決する場合があります。と出た場合  
+Microsoft Visual C++ 再頒布可能パッケージをインストールすると解決できる場合があります。  
+[サポートされている最新の Visual C++ 再頒布可能パッケージのダウンロード](https://learn.microsoft.com/ja-jp/cpp/windows/latest-supported-vc-redist?view=msvc-170)
       
 ## 使用アセット・ライブラリなど  
 言語: Rust  
